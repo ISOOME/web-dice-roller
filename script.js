@@ -8,7 +8,7 @@ function rollDice() {
 
     // Update the dice display with the generated values
     for (let i = 0; i < diceValues.length; i++) {
-        document.getElementById('dice' + (i + 1)).textContent = diceValues[i];
+        document.getElementById('die' + (i + 1)).textContent = diceValues[i];
     }
 }
 
