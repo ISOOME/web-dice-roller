@@ -1,0 +1,67 @@
+.body {
+    font-family: Chalkduster, fantasy;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+section {
+    margin-top: 20px;
+}
+
+.dice {
+    font-size: 3em;
+    margin: 10px;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 10px;
+    line-height: 70px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #51bd56;
+}
+
+button:focus {
+    outline: none;
+}
+
+#diceContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+#rollButton {
+    margin-top: 15px;
+}
