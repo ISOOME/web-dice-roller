@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+      Author: Indrek Soome
+  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dice Roller</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+  <!-- This will roll dice automatically when entering the website-->
+<body onload="autoRoll()">
+    <header>
+        <h1>Dice Roller Game</h1>
+        <p>This simulates rollig dice for a game or just for fun.</p>
+        <p>You can either press enter or the "Roll Dice" button to roll the dice.</p>
+    </header>
+
+    <section>
+        <!-- This part is created using chatGPT-->
+        <div id="diceContainer">
+            <h2>Dice Rolls</h2>
+            <div id="die1" class="dice">-</div>
+            <div id="die2" class="dice">-</div>
+            <div id="die3" class="dice">-</div>
+            <div id="die4" class="dice">-</div>
+            <div id="die5" class="dice">-</div>
+        </div>
+
+        <button id="rollButton" onclick="rollDice()">Roll Dice</button>
+    </section>
+</body>
+</html>
