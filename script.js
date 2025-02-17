@@ -1,18 +1,18 @@
-// Rolls the dice by generating random numbers and updating the dice displays
+// Update "dice" with generated random numbers
 function rollDice() {
-    // Generate random numbers between 1 and 6 for each dice
+    // Generate randoms between 1 and 6 
     let diceValues = [];
     for (let i = 1; i <= 5; i++) {
         diceValues.push(Math.floor(Math.random() * 6) + 1);
     }
 
-    // Update the dice display with the generated values
+    // Update with the generated values
     for (let i = 0; i < diceValues.length; i++) {
         document.getElementById('dice' + (i + 1)).textContent = diceValues[i];
     }
 }
 
-// Automatically rolls the dice when the page is loaded
+// Rolls the dice when page is first loaded
 function autoRoll() {
     rollDice();
 }
