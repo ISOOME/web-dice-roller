@@ -1,3 +1,12 @@
+async function rollDice() {
+    try {
+        let response = await fetch("I will add the URL later");
+        let data = await response.json();
+        document.getElementById("dice-result").textContent = "Result: " + data.roll;
+    } catch (error) {
+        document.getElementById("dice-result").textContent = "API call failed";
+    }
+}
 // Update "dice" with generated random numbers
 function rollDice() {
     // Generate randoms between 1 and 6 
